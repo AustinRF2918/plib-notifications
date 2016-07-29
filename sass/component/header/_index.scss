@@ -1,0 +1,9 @@
+@import "generation";
+
+@mixin _notification_header_headerStylization(){
+    //Implementation of header style here.
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@include _notification_header_generateHeader(".food-log");
