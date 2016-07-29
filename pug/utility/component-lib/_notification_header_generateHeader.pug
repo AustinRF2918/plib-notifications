@@ -1,0 +1,9 @@
+//This mixin corresponds to the mixins contained within
+//sass/component/header/ header::generateHeader
+//takes the message that will be displayed on the actual 
+//header as well as the selector name to be used within
+//our sass.
+mixin _notification_header_generateHeader(name, selectorName)
+  div(class=["row", selectorName])
+    .col-md-12.text-xs-center.text-md-left
+      h2=name

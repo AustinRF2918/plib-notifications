@@ -14,62 +14,17 @@
     <script src="js/app.js"></script>
   </head>
   <!--This mixin corresponds to the mixins contained within-->
-  <!--sass/component/container/. container::generateCenteredContainer-->
-  <!--takes a simple selector and generates it.-->
-  <!--This mixin corresponds to the mixins contained within-->
-  <!--sass/component/container/. container::generateClusterContainer-->
-  <!--takes a simple selector and generates it.-->
-  <!--This mixin corresponds to the mixins contained within-->
-  <!--sass/component/container/. container::generateCenteredElement-->
-  <!--takes a simple selector and generates it.-->
-  <!--This mixin corresponds to the mixins contained within-->
-  <!--sass/component/background/ and sass/component/sizing/-->
-  <!--background::generateBackground takes a simple selector -->
-  <!--for the page that we are referring to (which will be-->
-  <!--promptly expanded, and a selector for the background -->
-  <!--which will fill up our entire area.-->
+  <!--sass/component/header/ header::generateHeader-->
+  <!--takes the message that will be displayed on the actual -->
+  <!--header as well as the selector name to be used within-->
+  <!--our sass.-->
   <body>
-      <div class="full-page full-page-background">
-          <div class="primary-container">
-            <div class="row no-margin-mobile">
-              <div class="col-lg-12"><i class="fa fa-tree fa-2x" aria-hidden="true"></i></div>
-            </div>
-            <div class="row m-t-1 no-margin-mobile">
-              <div class="col-xl-6">
-                <h1 class="light-text">Welcome back to Sagebow.</h1>
-              </div>
-            </div>
-            <div class="row m-t-1 no-margin-mobile">
-              <div class="col-lg-12 p-y-2">
-                  <div class="cta-container">
-                    <div class="glassy"></div>
-                    <div class="col-lg-5 extend-full-height">
-                        <div class="email-address-container">
-                          <div class="form-group">
-                            <input class="form-control materialize-form" type="email" id="email-input" placeholder="Login Name"/>
-                            <label class="label" for="emailAddress">Login Name</label>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 extend-full-height">
-                        <div class="password-container">
-                          <div class="form-group">
-                            <input class="form-control materialize-form" type="password" id="password-input" placeholder="Password"/>
-                            <label class="label" for="emailAddress">Password</label>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 extend-full-height">
-                        <div class="login-container">
-                          <div class="form-group"><a class="btn btn-login">Login</a>
-                            <label class="consistency-hide" for="btn">Submit</label>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
+    <div class="container">
+        <div class="row message-center">
+          <div class="col-md-12 text-xs-center text-md-left">
+            <h2>Message Center</h2>
           </div>
-      </div>
+        </div>
+    </div>
   </body>
 </html>

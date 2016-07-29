@@ -1,30 +1,4 @@
-include ../../utility/component-lib/_login_container_generateContainer.pug
-include ../../utility/component-lib/_login_background_generateBackground.pug
+include ../../utility/component-lib/_notification_header_generateHeader.pug
 body
-    +_login_background_generateBackground("full-page", "full-page-background")
-      +_login_container_generateCenteredContainer("primary-container")
-        .row.no-margin-mobile
-          .col-lg-12
-            i(class=["fa", "fa-tree fa-2x"] aria-hidden="true")
-        .row.m-t-1.no-margin-mobile
-          .col-xl-6
-            h1.light-text Welcome back to Sagebow.
-        .row.m-t-1.no-margin-mobile
-          .col-lg-12.p-y-2
-            +_login_container_generateClusterContainer("cta-container")
-                .glassy
-                .col-lg-5.extend-full-height
-                  +_login_container_generateVCenteredElementContainer("email-address-container")
-                    .form-group
-                      input(type="email" class=["form-control", "materialize-form"], id="email-input", placeholder="Login Name")
-                      label(for="emailAddress" class="label") Login Name
-                .col-lg-5.extend-full-height
-                  +_login_container_generateVCenteredElementContainer("password-container")
-                    .form-group
-                      input(type="password" class=["form-control", "materialize-form"], id="password-input", placeholder="Password")
-                      label(for="emailAddress" class="label") Password
-                .col-lg-2.extend-full-height
-                  +_login_container_generateVCenteredElementContainer("login-container")
-                    .form-group
-                      a(class=["btn", "btn-login"]) Login
-                      label(class=["consistency-hide"] for="btn") Submit
+  .container
+    +_notification_header_generateHeader("Message Center", "message-center")
