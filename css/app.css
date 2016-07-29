@@ -109,6 +109,8 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+    .contactee .col-md-3 img {
+      max-width: 60px; }
     @media screen and (max-width: 767px) {
       .contactee .col-md-3 img {
         display: none;
