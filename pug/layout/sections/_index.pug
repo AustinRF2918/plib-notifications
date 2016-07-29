@@ -2,3 +2,9 @@ include ../../utility/component-lib/_notification_header_generateHeader.pug
 body
   .container
     +_notification_header_generateHeader("Food Log", "food-log")
+    +_notification_header_generateSubheaderNavigation("log-nav")
+      .col-md-6.text-md-left.text-xs-center.p-t-1
+        +_notification_header_generateNavStyle(["Foods", "Archive"], "food-navigation", "Foods")
+      .col-md-6.text-md-right.text-xs-center.p-t-1
+        +_notification_header_generateSubheaderLocation("Food Entries", 1, 10, 21, "iterationLocation")
+      
