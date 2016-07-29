@@ -3,14 +3,18 @@
 @mixin _notification_header_headerStylization(){
     //Implementation of header style here.
     font-family: "Source Sans Pro";
+    color: black;
     padding-top: 20px;
+    *{
+	font-weight: 600;
+    }
 }
 
 @include _notification_header_generateHeader(".food-log");
 
 @mixin _notification_header_navStylization(){
     font-family: "Source Sans Pro";
-    color: black;
+    color: lighten(black, 60%);
     &:hover{
 	cursor: pointer;
     }
@@ -26,3 +30,10 @@
 }
 
 @include _notification_header_generateNavStyle(".food-navigation");
+
+@mixin _notification_header_locationStylization() {
+    font-family: "Source Sans Pro";
+    color: black;
+}
+
+@include _notification_header_generateLocationStyle(".iteration-location")

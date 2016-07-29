@@ -189,11 +189,14 @@ html, body {
 
 .food-log {
   font-family: "Source Sans Pro";
+  color: black;
   padding-top: 20px; }
+  .food-log * {
+    font-weight: 600; }
 
 .food-navigation {
   font-family: "Source Sans Pro";
-  color: black; }
+  color: #999999; }
   .food-navigation:hover {
     cursor: pointer; }
   .food-navigation-active {
@@ -202,3 +205,7 @@ html, body {
     font-weight: 700; }
     .food-navigation-active:hover {
       cursor: pointer; }
+
+.iteration-location {
+  font-family: "Source Sans Pro";
+  color: black; }
