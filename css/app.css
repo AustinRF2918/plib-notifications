@@ -188,6 +188,17 @@ html, body {
       transform: translateX(-50%); } }
 
 .food-log {
-  @warning ("Utilizing _notification_header_generateHeader requires the mixin");
-  @warning ("_notification_header_headerStylization to be defined.");
+  font-family: "Source Sans Pro";
   padding-top: 20px; }
+
+.food-navigation {
+  font-family: "Source Sans Pro";
+  color: black; }
+  .food-navigation:hover {
+    cursor: pointer; }
+  .food-navigation-active {
+    font-family: "Source Sans Pro";
+    color: black;
+    font-weight: 700; }
+    .food-navigation-active:hover {
+      cursor: pointer; }

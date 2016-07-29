@@ -2,7 +2,27 @@
 
 @mixin _notification_header_headerStylization(){
     //Implementation of header style here.
+    font-family: "Source Sans Pro";
     padding-top: 20px;
 }
 
 @include _notification_header_generateHeader(".food-log");
+
+@mixin _notification_header_navStylization(){
+    font-family: "Source Sans Pro";
+    color: black;
+    &:hover{
+	cursor: pointer;
+    }
+}
+
+@mixin _notification_header_navActiveStylization(){
+    font-family: "Source Sans Pro";
+    color: black;
+    font-weight: 700;
+    &:hover{
+	cursor: pointer;
+    }
+}
+
+@include _notification_header_generateNavStyle(".food-navigation");
