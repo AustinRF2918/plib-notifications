@@ -24,7 +24,14 @@ mixin _login_container_SUBMODULE_emailHeaderModule(selectorName, header, preview
       else
         p.email-header <span class="email-new"></span> #{header}
         p.email-preview=preview
-    
+
+//This mixin corresponds to the mixins contained within
+//sass/component/container/. container::generateSubmoduleDate
+//IT IS TO BE MOVED TO A SUBMODULE DIRECTORY AT A LATER POINT.
+mixin _login_container_SUBMODULE_dateModule(selectorName, day, month)
+  div(class=[selectorName])
+    .col-md-12
+        p.email-dm #{day} #{month}
    
 //This mixin corresponds to the mixins contained within
 //no Sass file: it must be declared within an interface
@@ -45,7 +52,6 @@ mixin _login_container_generateNContainer(selectorName, breakSelectorName, subco
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-6")
       +_login_container_SUBMODULE_emailHeaderModule("email-data", "Very Cool Concept", "I love this idea, but would like to learn more. When are you free to talk about it and make possible inquiries?", false)
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-2")
-      p Hello
+      +_login_container_SUBMODULE_dateModule("email-date", "22", "July")
   .row
     hr(class=[breakSelectorName, "m-y-0"])
-

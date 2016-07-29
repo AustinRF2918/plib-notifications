@@ -129,7 +129,19 @@ html, body {
     .email-data .col-md-12 .email-header {
       font-weight: 800; }
     .email-data .col-md-12 .email-preview {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       color: #666666; }
+
+.email-date {
+  height: 100%; }
+  .email-date * {
+    color: #666666;
+    font-family: "Source Sans Pro"; }
+  .email-date .col-md-12 {
+    top: 50%;
+    transform: translateY(-50%); }
 
 .food-log {
   font-family: "Source Sans Pro";

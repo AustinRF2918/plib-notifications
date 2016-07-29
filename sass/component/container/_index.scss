@@ -66,9 +66,30 @@
       }
 
       .email-preview{
-	color: lighten(black, 40%);
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  color: lighten(black, 40%);
       }
     }
 }
 
 @include _notification_container_generateSubmoduleEmailHeader(".email-data");
+
+//Include as library module at later point.
+@mixin _notification_container_stylizeSubmoduleDate(){
+
+      height: 100%;
+
+    * {
+      color: lighten(black, 40%);
+      font-family: "Source Sans Pro";
+    }
+
+    .col-md-12 {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+}
+
+@include _notification_container_generateSubmoduleDate(".email-date");
