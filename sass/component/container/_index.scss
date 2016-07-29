@@ -1,0 +1,24 @@
+@import 'generation';
+
+@include _login_container_generateCenteredContainer(".primary-container", 50vw, 50vh, 50%);
+
+//Neccessary for creation  of a cta container: stylizes it.
+@mixin _login_container_generateCTAClusterContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px;
+
+    &::before{
+	position: absolute;
+	content: "";
+	top: 0; right: 0; bottom: 0; left: 0;
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.26);
+    }
+}
+
+//See "generation" for more information on these mixins.
+@include _login_container_generateClusterContainer(".cta-container", 170px, 100%, 280px);
+@include _login_container_generateCenteredElement(".email-address-container", true, ".form-group");
+@include _login_container_generateCenteredElement(".password-container", true, ".form-group");
+@include _login_container_generateCenteredElement(".login-container", true, ".form-group");
