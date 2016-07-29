@@ -99,6 +99,26 @@ html, body {
   .n-container .n-container-component * {
     margin: 0px; }
 
+.contactee {
+  height: 100%; }
+  .contactee .user-name, .contactee .user-location {
+    font-family: "Source Sans Pro"; }
+  .contactee .user-name {
+    font-weight: 600; }
+  .contactee .user-location {
+    color: #666666; }
+  .contactee .col-md-3 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 767px) {
+      .contactee .col-md-3 img {
+        display: none; } }
+  .contactee .col-md-9 {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%; }
+
 .food-log {
   font-family: "Source Sans Pro";
   color: black;

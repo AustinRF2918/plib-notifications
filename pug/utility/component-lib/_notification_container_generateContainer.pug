@@ -1,3 +1,18 @@
+//NOTE: MUST BE REFACTORED INTO SEPERATE MODULE AT LATER
+//DATE!
+
+//This mixin corresponds to the mixins contained within
+//sass/component/container/. container::generateSubmodulePerson
+//IT IS TO BE MOVED TO A SUBMODULE DIRECTORY AT A LATER POINT.
+mixin _login_container_SUBMODULE_personModule(selectorName, name, state, city, imgPath)
+  div(class=[selectorName])
+    .col-md-3
+      img.user-img(src=imgPath)
+    .col-md-9
+      p.user-name=name
+      p.user-location #{state}, #{city}
+    
+  
 //This mixin corresponds to the mixins contained within
 //no Sass file: it must be declared within an interface
 //mixin in the container::generateNContainer mixin.
@@ -13,10 +28,11 @@ mixin _login_container_generateSubcolumn(selectorName, className)
 mixin _login_container_generateNContainer(selectorName, breakSelectorName, subcomponentSelector)
   div(class=["row", selectorName])
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-4")
-      p Hello
+      +_login_container_SUBMODULE_personModule("contactee", "Doron York", "Detroit", "Michigan", "img/user-image.png")
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-6")
       p Hello
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-2")
       p Hello
   .row
     hr(class=[breakSelectorName, "m-y-0"])
+

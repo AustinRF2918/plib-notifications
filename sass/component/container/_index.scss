@@ -13,3 +13,38 @@
 
 @include _notification_container_generateNContainer(".n-container", ".n-container-component");
 
+//Include as library module at later point.
+@mixin _notification_container_stylizeSubmodulePerson(){
+    height: 100%;
+    .user-name, .user-location {
+      font-family: "Source Sans Pro";
+    }
+
+    .user-name {
+        font-weight: 600;
+    }
+
+    .user-location {
+	color: lighten(black, 40%);
+    }
+
+    .col-md-3 {
+	@media screen and (max-width: 767px){
+	  img {
+	      display: none;
+	  }
+	}
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+    }
+
+    .col-md-9 {
+	position: relative;
+	transform: translateY(-50%);
+	top: 50%;
+    }
+}
+
+@include _notification_container_generateSubmodulePerson(".contactee");
+
