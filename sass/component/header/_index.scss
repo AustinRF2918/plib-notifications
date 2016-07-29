@@ -1,7 +1,6 @@
 @import "generation";
 
 @mixin _notification_header_headerStylization(){
-    //Implementation of header style here.
     font-family: "Source Sans Pro";
     color: black;
     padding-top: 20px;
@@ -35,6 +34,15 @@
     font-weight: 700;
     font-family: "Source Sans Pro";
     color: black;
+    top: 5;
+    height: 36px;
+
+    p{
+	margin-bottom: 0px !important;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+    }
 }
 
 @include _notification_header_generateLocationStyle(".iteration-location")

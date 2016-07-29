@@ -160,4 +160,11 @@
 .iteration-location {
   font-weight: 700;
   font-family: "Source Sans Pro";
-  color: black; }
+  color: black;
+  top: 5;
+  height: 36px; }
+  .iteration-location p {
+    margin-bottom: 0px !important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
