@@ -48,3 +48,27 @@
 
 @include _notification_container_generateSubmodulePerson(".contactee");
 
+
+//Include as library module at later point.
+@mixin _notification_container_stylizeSubmoduleEmailHeader(){
+
+      height: 100%;
+    * {
+      font-family: "Source Sans Pro";
+    }
+
+    .col-md-12 {
+      top: 50%;
+      transform: translateY(-50%);
+
+      .email-header{
+	  font-weight: 800;
+      }
+
+      .email-preview{
+	color: lighten(black, 40%);
+      }
+    }
+}
+
+@include _notification_container_generateSubmoduleEmailHeader(".email-data");

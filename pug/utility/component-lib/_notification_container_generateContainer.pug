@@ -12,7 +12,20 @@ mixin _login_container_SUBMODULE_personModule(selectorName, name, state, city, i
       p.user-name=name
       p.user-location #{state}, #{city}
     
-  
+//This mixin corresponds to the mixins contained within
+//sass/component/container/. container::generateSubmoduleEmailHeader
+//IT IS TO BE MOVED TO A SUBMODULE DIRECTORY AT A LATER POINT.
+mixin _login_container_SUBMODULE_emailHeaderModule(selectorName, header, preview, isNew)
+  div(class=[selectorName])
+    .col-md-12
+      if !isNew
+        p.email-header=header
+        p.email-preview=preview
+      else
+        p.email-header <span class="email-new"></span> #{header}
+        p.email-preview=preview
+    
+   
 //This mixin corresponds to the mixins contained within
 //no Sass file: it must be declared within an interface
 //mixin in the container::generateNContainer mixin.
@@ -30,7 +43,7 @@ mixin _login_container_generateNContainer(selectorName, breakSelectorName, subco
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-4")
       +_login_container_SUBMODULE_personModule("contactee", "Doron York", "Detroit", "Michigan", "img/user-image.png")
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-6")
-      p Hello
+      +_login_container_SUBMODULE_emailHeaderModule("email-data", "Very Cool Concept", "I love this idea, but would like to learn more. When are you free to talk about it and make possible inquiries?", false)
     +_login_container_generateSubcolumn(subcomponentSelector, "col-md-2")
       p Hello
   .row

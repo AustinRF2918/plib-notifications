@@ -23,3 +23,11 @@
     }
 }
 
+@mixin _notification_container_generateSubmoduleEmailHeader($selector){
+    #{$selector}{
+	@warn("Utilizing _notification_container_generateSubmodulePerson requires the mixin:");
+	@warn("_notification_container_stylizeSubmoduleEmailHeader");
+	@include _notification_container_stylizeSubmoduleEmailHeader();
+    }
+}
+
