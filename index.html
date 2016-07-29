@@ -33,6 +33,14 @@
   <!--sass/component/header/ header::generateSubheaderLocation-->
   <!--takes the name of the "iterable" that we are displaying -->
   <!--as well as it's range, and it's selector-->
+  <!--This mixin corresponds to the mixins contained within-->
+  <!--no Sass file: it must be declared within an interface-->
+  <!--mixin in the container::generateNContainer mixin.-->
+  <!--This mixin corresponds to the mixins contained within-->
+  <!--sass/component/container/. container::generateNContainer-->
+  <!--takes a simple selector and generates it. Within the row-->
+  <!--one should use the generateSubcolumn with a classname for-->
+  <!--subcomponent styling.-->
   <body>
     <div class="container">
         <div class="row food-log">
@@ -49,7 +57,93 @@
               <p class="iteration-location">1 - 10 of 21 Food Entries</p>
           </div>
         </div>
-      <hr/>
+        <div class="row">
+          <hr class="m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
+        <div class="row n-container">
+            <div class="n-container-component col-md-4">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-6">
+              <p>Hello</p>
+            </div>
+            <div class="n-container-component col-md-2">
+              <p>Hello</p>
+            </div>
+        </div>
+        <div class="row">
+          <hr class="n-container-break m-y-0"/>
+        </div>
     </div>
   </body>
 </html>

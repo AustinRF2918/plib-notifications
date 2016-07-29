@@ -1,4 +1,5 @@
 include ../../utility/component-lib/_notification_header_generateHeader.pug
+include ../../utility/component-lib/_notification_container_generateContainer.pug
 body
   .container
     +_notification_header_generateHeader("Food Log", "food-log")
@@ -7,5 +8,7 @@ body
         +_notification_header_generateNavStyle(["Foods", "Archive"], "food-navigation", "Foods")
       .col-md-6.text-md-right.text-xs-center.p-t-1
         +_notification_header_generateSubheaderLocation("Food Entries", 1, 10, 21, "iteration-location")
-    hr
+    +_notification_header_generateHeaderBreak()
+    each val in [1, 2, 3, 4, 5, 6]
+      +_login_container_generateNContainer("n-container", "n-container-break", "n-container-component")
       

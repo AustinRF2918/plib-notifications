@@ -1,0 +1,22 @@
+//This mixin corresponds to the mixins contained within
+//no Sass file: it must be declared within an interface
+//mixin in the container::generateNContainer mixin.
+mixin _login_container_generateSubcolumn(selectorName, className)
+  div(class=[selectorName, className])
+    block
+
+//This mixin corresponds to the mixins contained within
+//sass/component/container/. container::generateNContainer
+//takes a simple selector and generates it. Within the row
+//one should use the generateSubcolumn with a classname for
+//subcomponent styling.
+mixin _login_container_generateNContainer(selectorName, breakSelectorName, subcomponentSelector)
+  div(class=["row", selectorName])
+    +_login_container_generateSubcolumn(subcomponentSelector, "col-md-4")
+      p Hello
+    +_login_container_generateSubcolumn(subcomponentSelector, "col-md-6")
+      p Hello
+    +_login_container_generateSubcolumn(subcomponentSelector, "col-md-2")
+      p Hello
+  .row
+    hr(class=[breakSelectorName, "m-y-0"])

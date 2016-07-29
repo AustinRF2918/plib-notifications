@@ -37,5 +37,9 @@ mixin _notification_header_generateNavStyle(words, selectorName, active)
 //as well as it's range, and it's selector
 mixin _notification_header_generateSubheaderLocation(iterableName, startRange, endRange, total, selectorName)
   p(class=selectorName) #{startRange} - #{endRange} of #{total} #{iterableName}
+  
+mixin _notification_header_generateHeaderBreak()
+  .row
+    hr(class=["m-y-0"])
 
 
