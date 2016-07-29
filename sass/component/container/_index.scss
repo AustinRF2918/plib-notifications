@@ -79,7 +79,7 @@
 //Include as library module at later point.
 @mixin _notification_container_stylizeSubmoduleDate(){
 
-      height: 100%;
+    height: 100%;
 
     * {
       color: lighten(black, 40%);
@@ -89,6 +89,10 @@
     .col-md-12 {
       top: 50%;
       transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 767px) {
+	display: none;
     }
 }
 

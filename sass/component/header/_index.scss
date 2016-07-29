@@ -32,6 +32,7 @@
 @include _notification_header_generateNavStyle(".food-navigation");
 
 @mixin _notification_header_locationStylization() {
+    font-weight: 700;
     font-family: "Source Sans Pro";
     color: black;
 }

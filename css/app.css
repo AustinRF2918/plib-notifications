@@ -142,6 +142,9 @@ html, body {
   .email-date .col-md-12 {
     top: 50%;
     transform: translateY(-50%); }
+  @media screen and (max-width: 767px) {
+    .email-date {
+      display: none; } }
 
 .food-log {
   font-family: "Source Sans Pro";
@@ -163,5 +166,6 @@ html, body {
       cursor: pointer; }
 
 .iteration-location {
+  font-weight: 700;
   font-family: "Source Sans Pro";
   color: black; }
