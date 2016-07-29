@@ -94,98 +94,10 @@ html, body {
   width: 100%;
   height: 100%; }
 
-html, body {
-  overflow: hidden; }
-
-@media screen and (min-width: 992px) {
-  .primary-container {
-    width: 50vw;
-    height: 50vh;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%); } }
-
-@media screen and (max-width: 991px) {
-  .primary-container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%); } }
-
-.cta-container {
-  @warning ("Utilizing _login_container_generateCTAClusterContainer requires the mixin");
-  @warning ("_login_container_CTAPrerequisite to be defined.");
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 0px; }
-  .cta-container::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.26); }
-  @media screen and (min-width: 991px) {
-    .cta-container {
-      height: 170px;
-      width: 100%; } }
-  @media screen and (max-width: 992px) {
-    .cta-container {
-      margin: 0px;
-      padding: 0px;
-      width: 100%;
-      height: 280px; } }
-
-.email-address-container {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%); }
-  .email-address-container .form-group {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start; }
-  @media screen and (max-width: 992px) {
-    .email-address-container a {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); } }
-
-.password-container {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%); }
-  .password-container .form-group {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start; }
-  @media screen and (max-width: 992px) {
-    .password-container a {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); } }
-
-.login-container {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%); }
-  .login-container .form-group {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start; }
-  @media screen and (max-width: 992px) {
-    .login-container a {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); } }
+.n-container .n-container-component {
+  height: 100px; }
+  .n-container .n-container-component * {
+    margin: 0px; }
 
 .food-log {
   font-family: "Source Sans Pro";
