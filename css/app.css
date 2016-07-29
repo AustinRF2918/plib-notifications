@@ -121,7 +121,7 @@
     @media screen and (max-width: 767px) {
       .contactee .col-md-9 {
         padding-left: 0px !important;
-        padding-right: 0px !important; } }
+        padding-right: 10px !important; } }
 
 .email-data {
   height: 100%; }
@@ -132,7 +132,7 @@
     transform: translateY(-50%); }
     @media screen and (max-width: 767px) {
       .email-data .col-md-12 {
-        padding-left: 0px !important;
+        padding-left: 10px !important;
         padding-right: 0px !important; } }
     .email-data .col-md-12 .email-header {
       font-weight: 800; }

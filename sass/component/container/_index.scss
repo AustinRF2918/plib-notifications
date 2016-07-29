@@ -54,7 +54,7 @@
     .col-md-9 {
         @media screen and (max-width: 767px) {
 	  padding-left: 0px !important;
-	  padding-right: 0px !important;
+	  padding-right: 10px !important;
         }
 	position: relative;
 	transform: translateY(-50%);
@@ -76,7 +76,7 @@
 
     .col-md-12 {
      @media screen and (max-width: 767px) {
-	padding-left: 0px !important;
+	padding-left: 10px !important;
 	padding-right: 0px !important;
       }
 
